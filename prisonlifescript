@@ -1,0 +1,93 @@
+local Skids = {"Slowboi106soul","TheSon99"}
+
+local CmdGui = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local CmdName = Instance.new("TextLabel")
+local FindCmd = Instance.new("TextBox")
+local CmdHandler = Instance.new("ScrollingFrame")
+local CmdText = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local Background2 = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local Execute = Instance.new("TextBox")
+local Minimum = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Background3 = Instance.new("Frame")
+local Topbar = Instance.new("TextLabel")
+local CmdTitle = Instance.new("TextLabel")
+local Background4 = Instance.new("Frame")
+local Notify6 = Instance.new("TextLabel")
+local Notify5 = Instance.new("TextLabel")
+local Notify4 = Instance.new("TextLabel")
+local Notify3 = Instance.new("TextLabel")
+local Notify2 = Instance.new("TextLabel")
+local Notify1 = Instance.new("TextLabel")
+local CloseBar = Instance.new("TextButton")
+local TransparencyBar = Instance.new("TextButton")
+local Prefix = ";"
+
+CmdGui.Name = "CmdGui"
+CmdGui.Parent = game:GetService("CoreGui")
+CmdGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Background.Name = "Background"
+Background.Parent = CmdGui
+Background.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Background.BorderSizePixel = 0
+Background.Position = UDim2.new(0.368556708, 0, 0.11490047, 0)
+Background.Size = UDim2.new(0, 350, 0, 350)
+Background.Active = true
+Background.Draggable = true
+
+CmdName.Name = "CmdName"
+CmdName.Parent = Background
+CmdName.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CmdName.BorderSizePixel = 0
+CmdName.Size = UDim2.new(0, 350, 0, 25)
+CmdName.Font = Enum.Font.GothamBlack
+CmdName.Text = "Commands"
+CmdName.TextColor3 = Color3.fromRGB(255, 255, 255)
+CmdName.TextScaled = true
+CmdName.TextSize = 14.000
+CmdName.TextWrapped = true
+
+FindCmd.Name = "FindCmd"
+FindCmd.Parent = Background
+FindCmd.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+FindCmd.BorderColor3 = Color3.fromRGB(0, 255, 0)
+FindCmd.BorderSizePixel = 0
+FindCmd.Position = UDim2.new(0.0714285746, 0, 0.0702347234, 0)
+FindCmd.Size = UDim2.new(0, 300, 0, 20)
+FindCmd.Font = Enum.Font.SourceSans
+FindCmd.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+FindCmd.PlaceholderText = "Search For Command"
+FindCmd.Text = ""
+FindCmd.TextColor3 = Color3.fromRGB(255, 255, 255)
+FindCmd.TextSize = 14.000
+FindCmd.TextWrapped = true
+
+CmdHandler.Name = "CmdHandler"
+CmdHandler.Parent = Background
+CmdHandler.Active = true
+CmdHandler.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CmdHandler.BackgroundTransparency = 1.000
+CmdHandler.BorderSizePixel = 0
+CmdHandler.AutomaticCanvasSize = "Y"
+CmdHandler.Position = UDim2.new(0.0714285746, 0, 0.142857149, 0)
+CmdHandler.Size = UDim2.new(0, 300, 0, 290)
+CmdHandler.ScrollBarThickness = 2
+
+CmdText.Name = "CmdText"
+CmdText.Parent = nil
+CmdText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CmdText.BackgroundTransparency = 1.000
+CmdText.BorderSizePixel = 0
+CmdText.Size = UDim2.new(0, 300, 0, 25)
+CmdText.Font = Enum.Font.SourceSans
+CmdText.Text = "Text"
+CmdText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CmdText.TextScaled = true
+CmdText.TextSize = 14.000
+CmdText.TextWrapped = true
+
+UIListLayout.Parent = CmdHandler
